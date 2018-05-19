@@ -1,0 +1,23 @@
+{
+    "name": "paraden",
+    "authors": ["Peter Campbell"],
+    "description": "A parallel game engine framework, written in D.",
+    "copyright": "Copyright © 2018, Peter Campbell",
+    "license": "Apache-2.0",
+
+    "targetName": "paraden",
+    "targetType": "library",
+    "targetPath": "bin",
+    "workingDirectory": "bin",
+
+    "buildTypes": {
+        "unittest": {
+            "buildOptions": ["unittests", "debugMode", "debugInfo"],
+            "sourcePaths": ["source", "tests"]
+        },
+        "release-unittest": {
+            "buildOptions": ["releaseMode", "optimize", "inline"],
+            "sourcePaths": ["source", "tests"]
+        }
+    }
+}
